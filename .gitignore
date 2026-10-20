@@ -1,0 +1,30 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Tile download cache
+.tile_cache/
+
+# Input screenshots / PowerPoint / reference figures
+maps/
+*.pptx
+Vikesland.png
+_slides/
+
+# Generated print outputs
+*.pdf
+*.png
+!requirements.txt
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
