@@ -1,0 +1,88 @@
+# Print maps for NatuRA Workshop 2026
+# ------------------------------------
+# Extents from orange boxes in maps/*.png screenshots.
+#   python make_map.py list
+#   python make_map.py stemmerdalen
+
+defaults:
+  layer: topo
+  dpi: 200
+  padding: 0.0
+  # Keep exact orange-box extent (do not expand to fill the page)
+  fit_paper_aspect: false
+  draw_boundary: false
+  workers: 10
+  label_size: large
+
+maps:
+  aurland_kommune:
+    title: Aurland kommune
+    subtitle: kommunenummer 4641
+    paper: A1
+    orientation: landscape
+    source: kommune
+    kommune_nr: "4641"
+    padding: 0.04
+    draw_boundary: true
+    fit_paper_aspect: true
+
+  # Original Vikesland extent (kept as preferred)
+  vikesland:
+    title: Vikesland
+    subtitle: Aurland
+    paper: A0
+    orientation: portrait
+    dpi: 200
+    bbox:
+      west: 7.105
+      south: 60.772
+      east: 7.325
+      north: 60.910
+
+  # maps/Rausmedalen.png (+ ~1 km south)
+  rausmesdalen:
+    title: Rausmesdalen, Vetledalen, Hednedalen
+    subtitle: Aurland
+    paper: A0
+    orientation: portrait
+    bbox:
+      west: 7.285
+      south: 60.712
+      east: 7.481
+      north: 60.846
+
+  # maps/Stemmerdalen.png (further −1 km west & south)
+  stemmerdalen:
+    title: Stemmerdalen
+    subtitle: Aurland
+    paper: A0
+    orientation: portrait
+    bbox:
+      west: 7.468
+      south: 60.715
+      east: 7.671
+      north: 60.843
+
+  # maps/aurlandsfjellet.png (−500 m all sides)
+  aurlandsfjell:
+    title: Aurlandsfjell / Kvammdalen / Furedalen
+    subtitle: Lærdalsfjell–Aurlandsfjell
+    paper: A0
+    orientation: landscape
+    bbox:
+      west: 7.183
+      south: 60.854
+      east: 7.482
+      north: 60.986
+
+  # maps/Lavisdalen.png
+  lavisdalen:
+    title: Låvisdalen
+    subtitle: Aurland
+    paper: A0
+    orientation: portrait
+    bbox:
+      west: 7.127
+      south: 60.736
+      east: 7.383
+      north: 60.872
